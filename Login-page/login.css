@@ -1,1 +1,40 @@
+body {
+    background-color:#F6FBFD ;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #fff;
+  
+}
+.login-form {
+  background-color: #fff;
+  padding: 2rem;
+  
+}
+.login-image img {
+  max-width: 100%;
+  width : 500vw;
+  height: 100vh;
+  margin-left: -12px;
+  
+}
+
+.btn-primary{
+    background-color: #004987;
+    border-color: #004987;
+}
+
+.primary-link {
+    text-decoration: none;
+    color: #004987;        
+}
+
+h3{
+    font-family: "Vesper Libre", serif;
+    font-weight: bold;
+}
+
 
