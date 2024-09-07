@@ -15,12 +15,23 @@ body {
   
 }
 .login-image img {
-  max-width: 100%;
-  width : 500vw;
-  height: 100vh;
-  margin-left: -12px;
+    max-width: 100%;
+    width: 500vw;
+    height: 110vh;
+    position: relative;
+    object-fit :fill; 
+    top: 0; 
+    left: 0; 
+    float: left;
+  }
   
-}
+  
+  @media (max-width: 768px) {
+    .login-image img {
+      height: 60vh; 
+    }
+  }
+  
 
 .btn-primary{
     background-color: #004987;
