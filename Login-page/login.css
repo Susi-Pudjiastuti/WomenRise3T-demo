@@ -48,4 +48,10 @@ h3{
     font-weight: bold;
 }
 
+#error-message{
+  color: red;
+  display: flex;
+  justify-content: center;
+
+}
 
