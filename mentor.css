@@ -2,3 +2,9 @@
   color: #004987;
 }
 
+@media (max-width:992) {
+  #search-mentor {
+    display:none;
+  }
+}
+
