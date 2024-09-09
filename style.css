@@ -25,3 +25,19 @@
 a{
     text-decoration: none;
 }
+
+/* navbar */
+.button-style-login{
+    background-color: #004987;
+    color: white;
+    border-radius: 6px;
+}
+
+.button-style-signup{
+    color: #004987;
+}
+
+#nav-title{
+    color: #333333;
+    font-size: 1.5rem;
+}
