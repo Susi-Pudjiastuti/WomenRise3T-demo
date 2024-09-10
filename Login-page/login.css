@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: auto;
   background-color: #fff;
   
 }
@@ -37,6 +37,7 @@ body {
     background-color: #004987;
     border-color: #004987;
 }
+
 .btn-primary:hover{
   background-color: #fff;
   color :#333333;
