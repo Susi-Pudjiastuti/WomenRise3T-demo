@@ -37,6 +37,11 @@ body {
     background-color: #004987;
     border-color: #004987;
 }
+.btn-primary:hover{
+  background-color: #fff;
+  color :#333333;
+  border-color: #fff;
+}
 
 .primary-link {
     text-decoration: none;
