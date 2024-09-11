@@ -1,3 +1,5 @@
+/*Font-Style*/
+
 .vesper-libre-regular {
     font-family: "Vesper Libre", serif;
     font-weight: 400;
@@ -40,4 +42,35 @@ a{
 #nav-title{
     color: #333333;
     font-size: 1.5rem;
+}
+
+/*Booking-Style*/
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FBFD;  
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.confirm {
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height:90vh;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  background-color: #fff;
+}
+
+.confirm img{
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    margin-bottom: 2rem;
 }
