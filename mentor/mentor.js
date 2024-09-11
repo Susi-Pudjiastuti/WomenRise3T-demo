@@ -1,6 +1,7 @@
 let API = "https://66de9f23de4426916ee1b9e7.mockapi.io/Mentor";
 let cardLarge = document.getElementById("card-large");
 let cardSmall = document.getElementById("card-small");
+let buttonBottom = document.getElementById("button-bottom");
 
 let searchMentor = document.getElementById("search-mentor");
 searchMentor.addEventListener("keypress", handleSearch);
@@ -11,11 +12,11 @@ function handleSearch(event) {
   }
 }
 
-// handle async for card-large-device
 async function getMentors() {
   let respons = await fetch(API);
   let mentors = await respons.json();
   mentors.map((item) => {
+    // handle async for card-large-device
     cardLarge.innerHTML += `
             <div class="card container d-none d-lg-block mb-3 shadow" data-aos="fade-left" data-aos-duration="1500" >
               <div class="row">
@@ -37,7 +38,10 @@ async function getMentors() {
               </div>
             </div>
         `;
-    cardSmall.innerHTML += `<div class="card d-block mx-auto d-lg-none my-3" style="width: 15rem;" data-aos="fade-left" data-aos-duration="1500">
+
+    //handle async card-small-device
+    cardSmall.innerHTML += `<div class="col-sm-12 col-md-6" id="card-small">
+                <div class="card d-block mx-auto d-lg-none m-1" style="width: 15rem;" data-aos="fade-left" data-aos-duration="1500">
                   <img
                     src="${item.avatar}"
                     class="card-img-top" alt="...">
@@ -51,12 +55,12 @@ async function getMentors() {
                       <a href="#" class="btn " id="btn-more">Info <i class="bi bi-arrow-right"></i></a>
                       <a href="#" class="btn" id="btn-register">Daftar</a>
                     </div>
-                  </div>
-                </div>`;
+                </div>
+              </div>`;
   });
+  buttonBottom.innerHTML += `<a href="#" class="btn" id="btn-next">Previous</a>
+            <a href="#" class="btn" id="btn-next" >Next <i class="bi bi-arrow-right"></i></a>`;
 }
 getMentors();
-
-//handle async card-small-device
 
 AOS.init();

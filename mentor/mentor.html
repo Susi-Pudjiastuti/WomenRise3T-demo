@@ -56,7 +56,7 @@
   </nav>
 
   <!-- Content -->
-  <div class="container">
+  <div class="container my-5">
     <div data-aos="fade-down" data-aos-duration="1000">
       <h2 class="text-blue">Mentor - mentor kami</h2>
       <p class="text-muted">Pilih mentor sesuai kebutuhanmu dan mulai sesi mentoring sekarang</p>
@@ -159,28 +159,29 @@
         </div>
 
         <!-- jarak -->
-        <div class="col-1"></div>
+        <div class="col-1 d-none d-lg-block"></div>
 
 
 
         <!-- Content Right -->
-        <div class="col-8">
+        <div class="col">
           <h3 class="text-blue py-3" data-aos="fade-left" data-aos-duration="1500">Daftar Mentor</h3>
+
           <!-- card mentor -->
+          <section class="mentor">
+            <!-- layar besar using DOM JS -->
+            <div id="card-large">
+            </div>
+          </section>
 
-          <!-- layar besar using DOM JS -->
-          <div id="card-large">
-          </div>
-
-          <!-- layar kecil -->
-          <div class="container-fluid" id="card-small">
-            <div class="row g-3">
-              <div class="col-sm-12 col-md-6" id="card-small">
-
-              </div>
+          <!-- layar kecil using DOM JS-->
+          <div class="container-fluid">
+            <div class="row g-3" id="card-small">
             </div>
           </div>
 
+          <div class="text-center mt-3" id="button-bottom">
+          </div>
 
         </div>
       </div>
