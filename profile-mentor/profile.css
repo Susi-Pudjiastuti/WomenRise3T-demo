@@ -1,0 +1,25 @@
+.text-blue {
+  color: #004987;
+}
+
+#btn-more {
+  border: 2px solid #004987;
+  color: #004987;
+  transition: all 200ms ease-in-out;
+}
+
+#btn-register,
+#btn-more:hover {
+  color: white;
+  background-color: #004987;
+  transition: all 200ms ease-in-out;
+}
+
+#btn-next {
+  border: 2px solid #004987;
+  color: #004987;
+}
+
+.text-justify {
+  text-align: justify;
+}

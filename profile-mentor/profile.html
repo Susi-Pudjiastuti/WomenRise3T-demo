@@ -4,10 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile Mentor</title>
+  <link rel="stylesheet" href="profile.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- bootstrap css and bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Font Logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container-fluid px-5 py-2 mx-5 d-flex gap-5">
 
+      <div class="d-flex gap-2 align-items-center">
+        <img src="gambar/Logo WomenRise3T.svg" width="48" height="auto">
+        <a href="#">
+          <div class="vesper-libre-bold pt-2" id="nav-title">WomenRise3T</div>
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-text gap-5 flex-grow-1 ms-5">
+          <li class="nav-item "><a href="">Home</a></li>
+          <li class="nav-item"><a href="">Beasiswa</a></li>
+          <li class="nav-item"><a href="">Mentor</a></li>
+          <li class="nav-item"><a href="">Donasi</a></li>
+        </ul>
+
+        <div class="d-flex gap-2 align-items-center">
+          <a class="btn button-style-signup" href="">Sign Up</a>
+          <a class="btn button-style-login px-3 py-2" href="">Log In</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="text-center my-5 text-blue">Informasi Mentor</h1>
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <h3 class="text-blue">Indah - Mentor WomenRise3T</h3>
+        <p class="my-1">Wilayah asal: Maluku Utara</p>
+        <p class="my-1">Pendidikan institut Teknologi Bandung</p>
+        <p class="text-justify my-3">Indah adalah salah satu perempuan inspiratif dari Maluku Utara yang telah
+          menorehkan
+          berbagai prestasi
+          gemilang di ITB.
+          Dengan latar belakang sebagai penerima beasiswa penuh, Indah tidak hanya unggul dalam bidang akademik tetapi
+          juga aktif
+          dalam berbagai kegiatan sosial dan organisasi mahasiswa.</p>
+        <p>Prestasi:</p>
+        <ul class="text-justify">
+          <li>Lulusan Terbaik di Fakultas Teknik Sipil dan Lingkungan ITB.</li>
+          <li>Ketua Komunitas Mahasiswa 3T di ITB, yang berhasil menggalang dana untuk membantu pendidikan anak-anak di
+            wilayah 3T.</li>
+          <li>Pemenang Lomba Inovasi Teknologi tingkat nasional dengan proyek pengembangan infrastruktur berkelanjutan
+            di daerah
+            terpencil.</li>
+        </ul>
+      </div>
+      <div class="col-md-1 d-none d-md-block"></div>
+      <div class="col-md-4 col-sm-12">
+
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/769/original/89425.jpg?1725895794"
+            class="card-img-top p-3" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Indah Lestari</h5>
+            <h6 class="mb-5">Maluku utara</h6>
+
+            <a href="#" class="btn" id="btn-register"> <i class="bi bi-check2-square"></i> Daftar Mentorship <i
+                class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
 </body>
 
 </html>
