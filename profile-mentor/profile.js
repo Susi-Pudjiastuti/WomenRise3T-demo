@@ -7,11 +7,12 @@ cardSlot = document.getElementById("content-right");
 console.log(id);
 
 async function handleProfile() {
-  let URL = `https://66de9f23de4426916ee1b9e7.mockapi.io/Mentor/${id}`;
-  let respons = await fetch(URL);
-  let mentor = await respons.json();
+  try {
+    let URL = `https://66de9f23de4426916ee1b9e7.mockapi.io/Mentor/${id}`;
+    let respons = await fetch(URL);
+    let mentor = await respons.json();
 
-  informasiMentor.innerHTML += `
+    informasiMentor.innerHTML += `
             <h3 class="text-blue text-center mb-4">${mentor.name} - Mentor WomenRise3T</h3>
           <p class="my-0">Wilayah asal: ${mentor.asalDaerah}</p>
           <p class="my-0">Pendidikan: ${mentor.universitas}</p>
@@ -27,13 +28,13 @@ async function handleProfile() {
             <li>${mentor.prestasi2}</li>
             <li>${mentor.prestasi3}</li>
           </ul>`;
-  jadwalMentoring.innerHTML += `
+    jadwalMentoring.innerHTML += `
           <h5 class=" text-blue">Jadwal Mentoring Mentor</h5>
           <table class="table table-bordered text-center">
             <thead>
               <tr>
                 <th scope=" col">Hari</th>
-                <th scope="col">Jam</th>
+                <th scope="col">Jam (WIB)</th>
               </tr>
             </thead>
             <tbody>
@@ -48,7 +49,7 @@ async function handleProfile() {
           </table>
           `;
 
-  cardSlot.innerHTML += `        
+    cardSlot.innerHTML += `        
         <div class="card mx-auto d-none d-md-block" style="width: 18rem;">
           <img
             src="${mentor.avatar}"
@@ -67,6 +68,9 @@ async function handleProfile() {
         </section>
 
   `;
+  } catch (error) {
+    alert("error");
+  }
 }
 
 handleProfile();
