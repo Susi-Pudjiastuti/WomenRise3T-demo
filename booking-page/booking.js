@@ -33,6 +33,6 @@ document.getElementById('btnBooking').addEventListener('click', function(event) 
     }
 
     if (!errors) {
-        window.location.href = "confirm-page/confirm.html"; 
+        window.location.href = "../confirmation-page/confirm.html"; 
     }
 });

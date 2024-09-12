@@ -12,7 +12,7 @@ btnLogin.addEventListener('click', (e) => {
     let password = document.getElementById('password').value
   
     if (email == userAccount.email && password == userAccount.password) {
-        window.location.href ='test.html'
+        window.location.href =''
     } 
     else {
         document.getElementById('error-message').innerHTML = 'Alamat email atau password yang kamu masukkan salah.'
