@@ -27,13 +27,13 @@ a{
 }
 
 /* navbar */
-.button-style-login{
+.button-style-navy{
     background-color: #004987;
     color: white;
     border-radius: 6px;
 }
 
-.button-style-signup{
+.button-style-text{
     color: #004987;
 }
 
@@ -42,3 +42,6 @@ a{
     font-size: 1.5rem;
 }
 
+.background-lightblue{
+    background-color: #F6FBFD;
+}
