@@ -15,15 +15,15 @@ async function handleProfile() {
     informasiMentor.innerHTML += `
         <div data-aos="fade-up" data-aos-duration="1500"> 
           <h3 class="text-blue text-center mb-4">${mentor.name} - Mentor WomenRise3T</h3>
-          <p class="my-0">Wilayah asal: ${mentor.asalDaerah}</p>
-          <p class="my-0">Pendidikan: ${mentor.universitas}</p>
+          <p class="my-0"><span class="text-blue fw-bold">Wilayah asal: </span> ${mentor.asalDaerah}</p>
+          <p class="my-0"><span class="text-blue fw-bold">Pendidikan: </span> ${mentor.universitas}</p>
           <img
             src="${mentor.avatar}"
             class="d-block d-md-none img-fluid mx-auto rounded p-3" alt="">
           <a href="#" class="btn d-block d-md-none" id="btn-register"> <i class="bi bi-check2-square"></i> Daftar
             Mentorship <i class="bi bi-arrow-right"></i></a>
           <p class="text-justify my-3">${mentor.profile}</p>
-          <p>Prestasi:</p>
+          <p class="text-blue fw-bold">Prestasi:</p>
           <ul class="text-justify">
             <li>${mentor.prestasi1}</li>
             <li>${mentor.prestasi2}</li>
