@@ -1,3 +1,45 @@
+/* navbar page */
+.vesper-libre-regular {
+  font-family: "Vesper Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vesper-libre-medium {
+  font-family: "Vesper Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.vesper-libre-bold {
+  font-family: "Vesper Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.vesper-libre-black {
+  font-family: "Vesper Libre", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* navbar */
+#button-style-login {
+  background-color: #004987;
+  color: white;
+  border-radius: 6px;
+}
+
+#button-style-signup {
+  color: #004987;
+}
+
+#nav-title {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+/* profile mentor */
 .text-blue {
   color: #004987;
 }
