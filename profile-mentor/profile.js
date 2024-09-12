@@ -13,7 +13,8 @@ async function handleProfile() {
     let mentor = await respons.json();
 
     informasiMentor.innerHTML += `
-            <h3 class="text-blue text-center mb-4">${mentor.name} - Mentor WomenRise3T</h3>
+        <div data-aos="fade-up" data-aos-duration="1500"> 
+          <h3 class="text-blue text-center mb-4">${mentor.name} - Mentor WomenRise3T</h3>
           <p class="my-0">Wilayah asal: ${mentor.asalDaerah}</p>
           <p class="my-0">Pendidikan: ${mentor.universitas}</p>
           <img
@@ -27,9 +28,12 @@ async function handleProfile() {
             <li>${mentor.prestasi1}</li>
             <li>${mentor.prestasi2}</li>
             <li>${mentor.prestasi3}</li>
-          </ul>`;
+          </ul>
+        </div>`;
+
     jadwalMentoring.innerHTML += `
-          <h5 class=" text-blue">Jadwal Mentoring Mentor</h5>
+        <div data-aos="fade-down" data-aos-duration="1500">
+          <h5 class="text-blue">Jadwal Mentoring Mentor</h5>
           <table class="table table-bordered text-center">
             <thead>
               <tr>
@@ -47,10 +51,11 @@ async function handleProfile() {
                 <td>${mentor.jam2}</td>
             </tbody>
           </table>
+        </div>
           `;
 
     cardSlot.innerHTML += `        
-        <div class="card mx-auto d-none d-md-block" style="width: 18rem;">
+        <div class="card mx-auto d-none d-md-block" data-aos="fade-left" data-aos-duration="1500" style="width: 18rem;">
           <img
             src="${mentor.avatar}"
             class="card-img-top p-3" alt="...">
@@ -62,7 +67,7 @@ async function handleProfile() {
           </div>
         </div>
 
-        <section class="slot-mentor text-center border my-5 py-5">
+        <section class="slot-mentor text-center border my-5 py-5" data-aos="fade-down" data-aos-duration="1000">
           <h5 class="text-blue">Slot Mentorship Intan tinggal</p>
             <h2 class="fw-bold text-blue">${mentor.slot} lagi✨</h2>
         </section>
@@ -74,3 +79,5 @@ async function handleProfile() {
 }
 
 handleProfile();
+
+AOS.init();
