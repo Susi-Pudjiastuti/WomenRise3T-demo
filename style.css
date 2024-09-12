@@ -45,3 +45,11 @@ a{
 .background-lightblue{
     background-color: #F6FBFD;
 }
+
+.active{
+    color: #004987 !important;
+}
+
+article p{
+    color: #323539;
+}

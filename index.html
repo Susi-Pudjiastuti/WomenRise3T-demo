@@ -29,7 +29,7 @@
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav navbar-text gap-5 flex-grow-1 ms-5">
+                    <ul class="navbar-nav navbar-text gap-sm-5 gap-3 flex-grow-1 ms-md-5 mb-2 mb-lg-0">
                         <li class="nav-item "><a href="#">Home</a></li>
                         <li class="nav-item"><a href="">Beasiswa</a></li>
                         <li class="nav-item"><a href="mentor/mentor.html">Mentor</a></li>
@@ -46,28 +46,66 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="background-lightblue">
-        <div class="container">
+    <section class="background-lightblue border-bottom">
+        <div class="container px-5 px-md-0">
             <div class="row align-items-center py-5">
-                <div class="col-7 d-inline-flex flex-column gap-3">
+
+                <div class="col col-sm-7 d-inline-flex flex-column gap-3">
                     <h1 class="fw-bold ">Raih Masa Depanmu bersama <span class="button-style-text">WomenRise3T</span></h1>
                     <p class="text-body-secondary">Meraih impian melalui pendidikan dan kesempatan beasiswa. Bergabunglah bersama kami dan dapatkan bimbingan yang kamu butuhkan untuk sukses.</p>
-                    <div>
+                    <div class="mb-5 d-inline-flex align-items-center">
                         <a class="button-style-navy px-3 py-2 me-4" href="">Lihat Beasiswa</a>
                         <a class="button-style-text text-dark" href="mentor/mentor.html">Temukan Mentor <img src="gambar/arrow-right.svg"></a>
-                    </div>
-                    
+                    </div>                 
                 </div>
-                <div class="col">
-                    <img src="gambar/girl.svg">
+
+                <div class="col col-sm">
+                    <img width="auto" height="auto" src="gambar/girl.svg">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About us Section -->
+    <section class="border-bottom">
+        <div class="container px-5 px-md-0 py-5 ">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-body-tertiary" href="#">Visi Kami</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-body-tertiary" href="#">Misi Kami</a>
+                </li>
+                
+            </ul>
+
+            <article class="mt-5">
+                <p class="button-style-text fw-semibold">What is WomenRise3T?</p>
+                <p id="tentang1"></p>
+                <hr class="my-5">
+                <p class="button-style-text fw-semibold">What do WomenRise3T do?</p>
+                <p id="tentang2"></p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Beasiswa Section -->
+    <!-- <section>
+        <div class="container">
+            <h1>Temukan Beasiswa Impianmu!</h1>
+            <p>Jelajahi berbagai beasiswa yang bisa membantu kamu meraih pendidikan lebih tinggi. 
+                Pilih beasiswa yang paling cocok buatmu dan ambil langkah pertama menuju masa depan yang lebih cerah.</p>
+        </div>
+    </section> -->
+
     <!-- Footer -->
      <footer class="border-top">
-        <div class="container">
+        <div class="container px-5 px-md-0">
             <!-- row  -->
             <div class="row pt-5 pb-4 gy-4 ">
                 <div class="col-sm-4">
@@ -106,6 +144,7 @@
             <p class="text-body-tertiary"> &copy; 2024 WomenRise3T. All Rights Reserved.</p>
         </div>
      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
