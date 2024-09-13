@@ -62,7 +62,7 @@ async function handleProfile() {
           <div class="card-body text-center">
             <h5 class="card-title">${mentor.name}</h5>
             <h6 class="mb-5">${mentor.asalDaerah}</h6>
-            <a href="#" class="btn" id="btn-register"> <i class="bi bi-check2-square"></i> Daftar Mentorship <i
+            <a href="/booking-page/booking.html" class="btn" id="btn-register"> <i class="bi bi-check2-square"></i> Daftar Mentorship <i
                 class="bi bi-arrow-right"></i></a>
           </div>
         </div>
