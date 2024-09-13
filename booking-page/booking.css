@@ -1,0 +1,86 @@
+/*Font-Style*/
+
+.vesper-libre-regular {
+    font-family: "Vesper Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.vesper-libre-medium {
+    font-family: "Vesper Libre", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.vesper-libre-bold {
+    font-family: "Vesper Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.vesper-libre-black {
+    font-family: "Vesper Libre", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* navbar */
+.button-style-login{
+    background-color: #004987;
+    color: white;
+    border-radius: 6px;
+}
+
+.button-style-signup{
+    color: #004987;
+}
+
+#nav-title{
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+/*Booking-Style*/
+
+.bg-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FBFD;  
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.booking-form {
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background-color: #fff;
+}
+
+.booking-form p{
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: #004987;
+}
+
+.btn-primary:hover{
+    background-color: #fff;
+    color :#333333;
+    border-color: #fff;
+}
+
+.text-danger{
+    font-size: small;
+    margin-left: 5pt;
+}

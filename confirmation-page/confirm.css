@@ -1,3 +1,5 @@
+/*Font-Style*/
+
 .vesper-libre-regular {
     font-family: "Vesper Libre", serif;
     font-weight: 400;
@@ -42,14 +44,32 @@ a{
     font-size: 1.5rem;
 }
 
-.background-lightblue{
-    background-color: #F6FBFD;
+/*Booking-Style*/
+
+.bg-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FBFD;  
+}
+h3{
+    font-size: 1.5rem;
 }
 
-.active{
-    color: #004987 !important;
+.confirm {
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  background-color: #fff;
 }
 
-article p{
-    color: #323539;
+.confirm img{
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    margin-bottom: 2rem;
 }
