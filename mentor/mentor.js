@@ -15,7 +15,7 @@ async function searchMentor(mentor) {
 
     let mentorFound = false;
     for (let i = 0; i < mentors.length; i++) {
-      if (mentor === mentors[i].name) {
+      if (mentor === mentors[i].name.toLowerCase()) {
         alert(`Mentor ${mentors[i].name} tersedia. Silahkan daftar🙌`);
         mentorFound = true;
         break;
@@ -37,7 +37,7 @@ async function searchMentor(mentor) {
 function handleSearch(event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    mentor = inputMentor.value;
+    mentor = inputMentor.value.toLowerCase();
     searchMentor(mentor);
   }
 }
@@ -84,7 +84,7 @@ async function getMentors() {
                     <p class="card-text">
                     </p>
                     <div class="text-center">
-                      <a href="#" class="btn " id="btn-more">Info <i class="bi bi-arrow-right"></i></a>
+                      <a href="#" class="btn " id="btn-more" onclick="handleClickMentor(${item.id})">Info <i class="bi bi-arrow-right"></i></a>
                       <a href="#" class="btn" id="btn-register">Daftar</a>
                     </div>
                 </div>
@@ -93,7 +93,8 @@ async function getMentors() {
     // button previous next
     buttonBottom.innerHTML += `<a href="#" class="btn" id="btn-next">Previous</a>
             <a href="#" class="btn" id="btn-next" >Next <i class="bi bi-arrow-right"></i></a>`;
-  } catch {
+  } catch (e) {
+    console.log(e);
     alert(
       "Terjadi kesalahan saat mengambil data mentor. Silakan coba lagi nanti."
     );
