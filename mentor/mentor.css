@@ -30,7 +30,8 @@
   border-radius: 6px;
 }
 
-#button-style-signup {
+#button-style-signup,
+#mentor-nav {
   color: #004987;
 }
 
