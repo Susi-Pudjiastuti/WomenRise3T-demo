@@ -46,7 +46,7 @@ a{
 
 /*Booking-Style*/
 
-.row {
+.bg-custom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,4 +78,9 @@ h3{
     background-color: #fff;
     color :#333333;
     border-color: #fff;
+}
+
+.text-danger{
+    font-size: small;
+    margin-left: 5pt;
 }

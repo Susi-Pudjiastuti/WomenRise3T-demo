@@ -36,3 +36,5 @@ document.getElementById('btnBooking').addEventListener('click', function(event) 
         window.location.href = "../confirmation-page/confirm.html"; 
     }
 });
+
+
