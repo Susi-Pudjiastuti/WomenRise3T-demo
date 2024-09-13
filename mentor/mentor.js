@@ -63,7 +63,7 @@ async function getMentors() {
                     <p class="card-text text-justify">${item.deskripsi}</p>
                     <div class="text-end">
                       <button class="btn " id="btn-more" onclick="handleClickMentor(${item.id})">Selengkapnya <i class="bi bi-arrow-right"></i></button>
-                      <a href="#" class="btn" id="btn-register">Daftar</a>
+                      <a href="/booking-page/booking.html" class="btn" id="btn-register">Daftar</a>
                     </div>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ async function getMentors() {
                     </p>
                     <div class="text-center">
                       <a href="#" class="btn " id="btn-more" onclick="handleClickMentor(${item.id})">Info <i class="bi bi-arrow-right"></i></a>
-                      <a href="#" class="btn" id="btn-register">Daftar</a>
+                      <a href="/booking-page/booking.html" class="btn" id="btn-register">Daftar</a>
                     </div>
                 </div>
               </div>`;
