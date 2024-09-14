@@ -134,8 +134,24 @@ async function getTesti() {
                 </div>
         </div>
         `
-        return item.name
     })
-    console.log(NamaTesti)
 }
 getTesti();
+
+// FAQ =========================================================================
+let FAQ = {
+    ques1: "WomenRise3T adalah platform yang menyediakan informasi beasiswa dan sesi mentoring khusus untuk perempuan dari wilayah 3T (tertinggal, terdepan, terluar) di Indonesia.",
+    ques2: "Semua perempuan dari wilayah 3T yang memenuhi syarat dan dapat memberikan bukti asal wilayahnya.",
+    ques3: "Sesi mentoring hanya tersedia untuk perempuan dari wilayah 3T yang telah terdaftar dan terverifikasi. Setelah diverifikasi, Anda dapat memilih mentor dan mengatur jadwal sesi mentoring.",
+    ques4: "Tidak, layanan mentoring disediakan secara gratis untuk perempuan yang telah terverifikasi sebagai berasal dari wilayah 3T.",
+    ques5: "Anda dapat menghubungi tim kami melalui Whatsapp kami."
+}
+
+document.getElementById("tanya-1").innerHTML = FAQ.ques1
+document.getElementById("tanya-2").innerHTML = FAQ.ques2
+document.getElementById("tanya-3").innerHTML = FAQ.ques3
+document.getElementById("tanya-4").innerHTML = FAQ.ques4
+document.getElementById("tanya-5").innerHTML = FAQ.ques5
+
+// ==============================================================================
+
