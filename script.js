@@ -118,7 +118,7 @@ async function getTesti() {
     let NamaTesti = testi.map((item) =>{
        listTesti.innerHTML +=
        `
-        <div class="col-lg-4 card" >
+        <div class="col-lg-4 col-12 card" >
                 <div class="card-body d-flex flex-column justify-content-between p-4">
                   <div>
                     <img src="/gambar/icon/petik.svg" width="32" height="auto">
