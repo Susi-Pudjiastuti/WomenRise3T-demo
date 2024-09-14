@@ -1,6 +1,6 @@
 // Navigation Bar ==========================================================
 let navbar = document.getElementById("navbar")
-navbar.innerHTML =`<nav class="navbar navbar-expand-lg border-bottom">
+navbar.innerHTML = `<nav class="navbar navbar-expand-lg border-bottom">
     <div class="container-fluid px-5 py-2 mx-5 d-flex gap-5">
         
             <div class="d-flex gap-2 align-items-center">
@@ -87,6 +87,22 @@ tentang2.textContent = aboutUs.tentang2WR3T
 
 // =================================================
 
+// Mentor ==========================================
+let API = "https://66de9f23de4426916ee1b9e7.mockapi.io/Mentor";
 
+let listMentor = document.getElementById("list-mentor")
+
+async function getMentors() {
+    let respons = await fetch(API)
+    let mentors = await respons.json()
+
+    let namaMentor = mentors.map((item) =>{
+       return item.name;
+    })
+    // listMentor.innerHTML=``
+    console.log(namaMentor)
+}
+
+getMentors();
 
 
