@@ -63,3 +63,11 @@ a{
 article p{
     color: #323539;
 }
+
+.rounded-img{
+    border-radius: 50%;
+}
+
+#testimony-profile{
+    font-size: small;
+}

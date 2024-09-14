@@ -96,13 +96,46 @@ async function getMentors() {
     let respons = await fetch(API)
     let mentors = await respons.json()
 
-    let namaMentor = mentors.map((item) =>{
-       return item.name;
-    })
-    // listMentor.innerHTML=``
-    console.log(namaMentor)
+    // mentors.map((item) =>{
+    //    listMentor.innerHTML=``
+    // })
+    
 }
 
 getMentors();
 
+// ====================================================
 
+// Testimoni pengguna =================================
+let testiAPI = "https://66e5d6615cc7f9b6273e7e59.mockapi.io/testimonipengguna";
+
+let listTesti = document.getElementById("list-testi")
+
+async function getTesti() {
+    let respons = await fetch(testiAPI)
+    let testi = await respons.json()
+
+    let NamaTesti = testi.map((item) =>{
+       listTesti.innerHTML +=
+       `
+        <div class="col-lg-4 card" >
+                <div class="card-body d-flex flex-column justify-content-between p-4">
+                  <div>
+                    <img src="/gambar/icon/petik.svg" width="32" height="auto">
+                  <p class="card-text p-2">${item.testimoni}</p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img class="rounded-img" src="${item.avatar}" width="40" height="40">
+                    <div class="d-flex flex-column ms-2">
+                        <p class="m-0 fw-bold button-style-text" id="testimony-profile">${item.name}</p>
+                        <p class="m-0" id="testimony-profile">${item.daerah}</p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        `
+        return item.name
+    })
+    console.log(NamaTesti)
+}
+getTesti();
