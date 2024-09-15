@@ -87,6 +87,35 @@ tentang2.textContent = aboutUs.tentang2WR3T
 
 // =================================================
 
+// Beasiswa ========================================
+let beasiswaAPI = "https://66e67bc717055714e589aaa1.mockapi.io/beasiswa"
+
+let listBeasiswa = document.getElementById("list-beasiswa")
+
+async function getBeasiswa() {
+    let respons = await fetch(beasiswaAPI)
+    let beasiswa = await respons.json()
+
+    beasiswa.map((item) =>{
+        listBeasiswa.innerHTML += 
+    `
+        <article class="col d-flex justify-content-center">
+                    <div class="card my-4" style="width: 18rem;">
+                        <div class="card-body d-inline-flex flex-column justify-content-between">
+                            <p class="text-center fw-bold button-style-text">${item.judul}</p>
+                            <div>
+                            <p class="m-0 text-start d-flex align-items-center"><img src="gambar/icon/Vector.svg">${item.jenjang}</p>
+                            <p class="m-0 text-start d-flex align-items-center"><img src="gambar/icon/calendar.svg">${item.periode}</p>
+                            </div>
+                        </div>
+                      </div>
+        </article>
+    `
+    console.log(item.judul)
+    }) 
+}
+getBeasiswa();
+
 // Mentor ==========================================
 let API = "https://66de9f23de4426916ee1b9e7.mockapi.io/Mentor";
 
