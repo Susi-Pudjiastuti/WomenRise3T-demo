@@ -63,3 +63,17 @@ a{
 article p{
     color: #323539;
 }
+
+.rounded-img{
+    border-radius: 50%;
+}
+
+#testimony-profile{
+    font-size: small;
+}
+
+.status-tag{
+    border: 1px solid #004987 ;
+    border-radius: 50px;
+    font-size: small;
+}
