@@ -1,0 +1,65 @@
+body {
+    background-color:#F6FBFD ;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #fff;
+  
+}
+.login-form {
+  background-color: #fff;
+  padding: 2rem;
+  
+}
+.login-image img {
+    max-width: 100%;
+    width: 500vw;
+    height: 110vh;
+    position: relative;
+    object-fit :fill; 
+    top: 0; 
+    left: 0; 
+    float: left;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .login-image img {
+      height: 60vh; 
+    }
+  }
+  
+
+.btn-primary{
+    background-color: #004987;
+    border-color: #004987;
+}
+
+.btn-primary:hover{
+  background-color: #fff;
+  color :#333333;
+  border-color: #fff;
+}
+
+.primary-link {
+    text-decoration: none;
+    color: #004987;        
+}
+
+h3{
+    font-family: "Vesper Libre", serif;
+    font-weight: bold;
+    color: #333333;
+}
+
+.text-danger{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
