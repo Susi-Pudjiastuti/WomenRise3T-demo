@@ -135,12 +135,12 @@ async function getMentors() {
                         <img src="${mentors[i].avatar}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h4 class="fw-bold">${mentors[i].name}</h4>
-                          <div class="d-inline-flex align-items-center status-tag py-1 px-2">
+                          <div class=" d-inline-flex align-items-center status-tag py-1 px-2">
                             <img src="gambar/icon/user.svg"><p class="card-text button-style-text fw-semibold">${mentors[i].status}</p>
                           </div>
                           <hr>
-                          <p class="m-0"><img class="me-2" src="gambar/icon/Vector.svg">${mentors[i].universitas}</p>
-                          <p class="m-0"><img class="me-2" src="gambar/icon/location.svg">${mentors[i].asalDaerah}</p>
+                          <p class="m-0 text-start"><img class="me-2" src="gambar/icon/Vector.svg">${mentors[i].universitas}</p>
+                          <p class="m-0 text-start"><img class="me-2" src="gambar/icon/location.svg">${mentors[i].asalDaerah}</p>
                         </div>
                     </div>
                 </div>
