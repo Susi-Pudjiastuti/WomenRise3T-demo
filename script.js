@@ -96,9 +96,32 @@ async function getMentors() {
     let respons = await fetch(API)
     let mentors = await respons.json()
 
-    // mentors.map((item) =>{
-    //    listMentor.innerHTML=``
-    // })
+    for (let i=0; i<3; i++){
+        
+        let card =
+        `
+            
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card background-lightblue" style="width: 18rem;">
+                        <img src="${mentors[i].avatar}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="fw-bold">${mentors[i].name}</h4>
+                          <div class="d-inline-flex align-items-center status-tag py-1 px-2">
+                            <img src="gambar/icon/user.svg"><p class="card-text button-style-text fw-semibold">${mentors[i].status}</p>
+                          </div>
+                          <hr>
+                          <p class="m-0"><img class="me-2" src="gambar/icon/Vector.svg">${mentors[i].universitas}</p>
+                          <p class="m-0"><img class="me-2" src="gambar/icon/location.svg">${mentors[i].asalDaerah}</p>
+                        </div>
+                    </div>
+                </div>
+            
+        `
+        console.log(mentors[i].name)
+        listMentor.innerHTML += card
+        
+    }
+
     
 }
 
@@ -115,7 +138,7 @@ async function getTesti() {
     let respons = await fetch(testiAPI)
     let testi = await respons.json()
 
-    let NamaTesti = testi.map((item) =>{
+    testi.map((item) =>{
        listTesti.innerHTML +=
        `
         <div class="col-lg-4 col-12 card" >

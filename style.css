@@ -71,3 +71,9 @@ article p{
 #testimony-profile{
     font-size: small;
 }
+
+.status-tag{
+    border: 1px solid #004987 ;
+    border-radius: 50px;
+    font-size: small;
+}
