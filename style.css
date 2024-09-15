@@ -83,7 +83,7 @@ article p{
     font-size: small;
 }
 
-@media (max-width: 1335px) {
+@media (max-width: 	767px) {
     .custom-img {
       width: 100%; /* Custom width for phones */
       height: 100%; /* Custom height for phones */
