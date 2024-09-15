@@ -77,3 +77,16 @@ article p{
     border-radius: 50px;
     font-size: small;
 }
+
+@media (max-width: 1335px) {
+    .custom-img {
+      width: 100%; /* Custom width for phones */
+      height: 100%; /* Custom height for phones */
+    }
+  }
+
+@media (max-width: 576px){
+    #nav-title {
+        display: none;
+    }
+}
