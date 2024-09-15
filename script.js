@@ -1,32 +1,43 @@
-// Navigation Bar ==========================================================
+// Navigation Bar logged ==========================================================
 let navbar = document.getElementById("navbar")
-navbar.innerHTML = `<nav class="navbar navbar-expand-lg border-bottom">
-    <div class="container-fluid px-5 py-2 mx-5 d-flex gap-5">
-        
-            <div class="d-flex gap-2 align-items-center">
-                <img src="../gambar/Logo WomenRise3T.svg" width="48" height="auto">
-                <a href="../index.html"><div class="vesper-libre-bold pt-2" id="nav-title">WomenRise3T</div></a>
-            </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+if (navbar){
+    try{
+        navbar.innerHTML = `<nav class="navbar navbar-expand-lg border-bottom">
+        <div class="container-fluid px-0 px-lg-5 py-2 mx-5 d-flex gap-5">
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-text gap-5 flex-grow-1 ms-5">
-                    <li class="nav-item "><a href="../index.html">Home</a></li>
-                    <li class="nav-item"><a href="">Beasiswa</a></li>
-                    <li class="nav-item"><a href="/mentor/mentor.html">Mentor</a></li>
-                    <li class="nav-item"><a href="">Donasi</a></li>
-                </ul>
-
                 <div class="d-flex gap-2 align-items-center">
-                    <a class="btn button-style-outline px-3 py-2" href="">Log Out</a>
+                    <img src="../gambar/Logo WomenRise3T.svg" width="48" height="auto">
+                    <a href="/landing-page-logged/index.html"><div class="vesper-libre-bold pt-2" id="nav-title">WomenRise3T</div></a>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-text gap-4 gap-lg-5 flex-grow-1 ms-0 ms-lg-5">
+                        <li class="nav-item "><a href="/landing-page-logged/index.html">Home</a></li>
+                        <li class="nav-item"><a href="">Beasiswa</a></li>
+                        <li class="nav-item"><a href="/mentor/mentor.html">Mentor</a></li>
+                        <li class="nav-item"><a href="">Donasi</a></li>
+                    </ul>
+    
+                    <div class="my-4 my-lg-0 d-flex gap-2 align-items-center">
+                        <a class="btn button-style-outline px-3 py-2" href="/Login-page/login.html">Log Out</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>`
+    </nav>`
+    } catch (e){
+        console.error("Error occurred: ", error);
+    }
+}else {
+    console.warn("Navbar element not found. Skipping navbar injection.");
+}
+ 
+
 // ===================================================================================
 
 // Footer ============================================================================
@@ -104,8 +115,8 @@ async function getBeasiswa() {
                         <div class="card-body d-inline-flex flex-column justify-content-between">
                             <p class="text-center fw-bold button-style-text">${item.judul}</p>
                             <div>
-                            <p class="m-0 text-start d-flex align-items-center"><img src="gambar/icon/Vector.svg">${item.jenjang}</p>
-                            <p class="m-0 text-start d-flex align-items-center"><img src="gambar/icon/calendar.svg">${item.periode}</p>
+                            <p class="m-0 text-start d-flex align-items-center"><img src="../gambar/icon/Vector.svg">${item.jenjang}</p>
+                            <p class="m-0 text-start d-flex align-items-center"><img src="../gambar/icon/calendar.svg">${item.periode}</p>
                             </div>
                         </div>
                       </div>
@@ -136,11 +147,11 @@ async function getMentors() {
                         <div class="card-body">
                             <h4 class="fw-bold">${mentors[i].name}</h4>
                           <div class=" d-inline-flex align-items-center status-tag py-1 px-2">
-                            <img src="gambar/icon/user.svg"><p class="card-text button-style-text fw-semibold">${mentors[i].status}</p>
+                            <img src="../gambar/icon/user.svg"><p class="card-text button-style-text fw-semibold">${mentors[i].status}</p>
                           </div>
                           <hr>
-                          <p class="m-0 text-start"><img class="me-2" src="gambar/icon/Vector.svg">${mentors[i].universitas}</p>
-                          <p class="m-0 text-start"><img class="me-2" src="gambar/icon/location.svg">${mentors[i].asalDaerah}</p>
+                          <p class="m-0 text-start"><img class="me-2" src="../gambar/icon/Vector.svg">${mentors[i].universitas}</p>
+                          <p class="m-0 text-start"><img class="me-2" src="../gambar/icon/location.svg">${mentors[i].asalDaerah}</p>
                         </div>
                     </div>
                 </div>
@@ -176,7 +187,7 @@ async function getTesti() {
                     <img src="/gambar/icon/petik.svg" width="32" height="auto">
                   <p class="card-text p-2">${item.testimoni}</p>
                   </div>
-                  <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center mt-2">
                     <img class="rounded-img" src="${item.avatar}" width="40" height="40">
                     <div class="d-flex flex-column ms-2">
                         <p class="m-0 fw-bold button-style-text" id="testimony-profile">${item.name}</p>

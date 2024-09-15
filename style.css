@@ -47,6 +47,11 @@ a{
     color: white !important;
 }
 
+.button-style-navy:hover{
+    background-color: #004987;
+    color: white;
+}
+
 #nav-title{
     color: #333333;
     font-size: 1.5rem;
@@ -76,4 +81,17 @@ article p{
     border: 1px solid #004987 ;
     border-radius: 50px;
     font-size: small;
+}
+
+@media (max-width: 1335px) {
+    .custom-img {
+      width: 100%; /* Custom width for phones */
+      height: 100%; /* Custom height for phones */
+    }
+  }
+
+@media (max-width: 576px){
+    #nav-title {
+        display: none;
+    }
 }
