@@ -47,6 +47,11 @@ a{
     color: white !important;
 }
 
+.button-style-navy:hover{
+    background-color: #004987;
+    color: white;
+}
+
 #nav-title{
     color: #333333;
     font-size: 1.5rem;
